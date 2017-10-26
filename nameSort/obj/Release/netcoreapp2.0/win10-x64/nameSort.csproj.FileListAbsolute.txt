@@ -1,0 +1,13 @@
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.exe
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.deps.json
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.runtimeconfig.json
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.runtimeconfig.dev.json
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.dll
+H:\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.pdb
+H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.csproj.CoreCompileInputs.cache
+H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfoInputs.cache
+H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfo.cs
+H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.dll
+H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.pdb

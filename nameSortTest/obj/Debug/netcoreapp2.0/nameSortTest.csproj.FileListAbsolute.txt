@@ -1,0 +1,11 @@
+H:\nameSort\nameSortTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\nameSort\nameSortTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\nameSort\nameSortTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\nameSort\nameSortTest\bin\Debug\netcoreapp2.0\nameSort.dll
+H:\nameSort\nameSortTest\bin\Debug\netcoreapp2.0\nameSort.pdb
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.csprojResolveAssemblyReference.cache
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.csproj.CoreCompileInputs.cache
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.AssemblyInfoInputs.cache
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.AssemblyInfo.cs
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.dll
+H:\nameSort\nameSortTest\obj\Debug\netcoreapp2.0\nameSortTest.pdb
