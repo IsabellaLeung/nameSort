@@ -5640,8 +5640,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\o_km\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Quiorra\\.nuget\\packages\\": {},
+    "F:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5649,17 +5649,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "H:\\nameSort\\nameSortTest\\nameSortTest.csproj",
+      "projectUniqueName": "C:\\Users\\Quiorra\\Documents\\GitHub\\nameSort\\nameSortTest\\nameSortTest.csproj",
       "projectName": "nameSortTest",
-      "projectPath": "H:\\nameSort\\nameSortTest\\nameSortTest.csproj",
-      "packagesPath": "C:\\Users\\o_km\\.nuget\\packages\\",
-      "outputPath": "H:\\nameSort\\nameSortTest\\obj\\",
+      "projectPath": "C:\\Users\\Quiorra\\Documents\\GitHub\\nameSort\\nameSortTest\\nameSortTest.csproj",
+      "packagesPath": "C:\\Users\\Quiorra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Quiorra\\Documents\\GitHub\\nameSort\\nameSortTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "F:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\o_km\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Quiorra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5672,8 +5672,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "H:\\nameSort\\nameSort\\nameSort.csproj": {
-              "projectPath": "H:\\nameSort\\nameSort\\nameSort.csproj"
+            "C:\\Users\\Quiorra\\Documents\\GitHub\\nameSort\\nameSort\\nameSort.csproj": {
+              "projectPath": "C:\\Users\\Quiorra\\Documents\\GitHub\\nameSort\\nameSort\\nameSort.csproj"
             }
           }
         }

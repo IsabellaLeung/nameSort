@@ -11,3 +11,16 @@ H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfoIn
 H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfo.cs
 H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.dll
 H:\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.pdb
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.exe
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.deps.json
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.runtimeconfig.json
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.runtimeconfig.dev.json
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.dll
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\bin\Release\netcoreapp2.0\win10-x64\nameSort.pdb
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.csproj.CoreCompileInputs.cache
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfoInputs.cache
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.AssemblyInfo.cs
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.dll
+C:\Users\Quiorra\Documents\GitHub\nameSort\nameSort\obj\Release\netcoreapp2.0\win10-x64\nameSort.pdb
