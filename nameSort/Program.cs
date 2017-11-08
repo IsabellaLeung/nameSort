@@ -10,22 +10,31 @@ namespace nameSort
         static void Main(string[] args)
         {
             //Check input is not nothing
-            if (args == null || args.Length == 0)
-            {
-                Console.WriteLine("You haven't given me anything to sort!");
-                return;
-            } 
+            //if (args == null || args.Length == 0)
+            //{
+            //    Console.WriteLine("You haven't given me anything to sort!");
+            //    return;
+            //} 
 
             //Input file
-            string[] fileToOpen = File.ReadAllLines(args[0]);
+            string[] fileToOpen = File.ReadAllLines("unsorted-names-list.txt");
 
             //Read file
-            var unsortedList = ListOfNames.NamesList(fileToOpen);
+            ListOfNames takeUnsortedList = new ListOfNames();
+            var unsortedList = takeUnsortedList.NamesList(fileToOpen);
+            var randomvarthing = new List<String> { "a", "c", "s", "w", "a" };
+            var randomvarthing2 = "asdasd!";
+
             //Sort file
-            var sortedList = SortingNames.SortNames(unsortedList);
+            SortingNames sort = new SortingNames();
+            ISortingNames sortAnyName = sort;
+            sort.SortNamesAsc(unsortedList);
+            sort.SortNamesDesc(unsortedList);
+            sort.SortNamesAsc(randomvarthing);
+            //sort.SortNamesAsc(randomvarthing2);
 
             //Save file
-            SaveToFile.SaveSortedList(sortedList);
+            //SaveToFile.SaveSortedList(sortedList);
 
             //Keep the console window open
             Console.WriteLine("Press any key to exit.");
@@ -35,7 +44,7 @@ namespace nameSort
 
     public class ListOfNames
     {
-        public static List<string> NamesList(string[] textInFile)
+        public List<string> NamesList(string[] textInFile)
         {
             List<string> nameList = new List<string>();
 
@@ -54,14 +63,31 @@ namespace nameSort
             return nameList;
         }
     }
-
-    public class SortingNames
+    
+    public interface ISortingNames
     {
-        public static List<string> SortNames(List<string> listToSort)
+        List<string> SortNamesAsc(List<string> listToSort);
+        List<string> SortNamesDesc(List<string> listToSort);
+    }
+
+    public class SortingNames : ISortingNames
+    {
+        public List<string> SortNamesAsc(List<string> listToSort)
         {
             //Order the names list first by surname, then by first name if surnames are the same
             listToSort = listToSort.OrderBy(x => x.Split(' ').Last()).ThenBy(x => x).ToList();
             //Print to Console
+            Console.WriteLine("Names in ascending order:");
+            listToSort.ForEach(i => Console.WriteLine("{0}\n", i));
+            return listToSort;
+        }
+
+        public List<string> SortNamesDesc(List<string> listToSort)
+        {
+            //Order the names list first by surname, then by first name if surnames are the same
+            listToSort = listToSort.OrderByDescending(x => x.Split(' ').Last()).ThenBy(x => x).ToList();
+            //Print to Console
+            Console.WriteLine("Names in descending order:");
             listToSort.ForEach(i => Console.WriteLine("{0}\n", i));
             return listToSort;
         }
