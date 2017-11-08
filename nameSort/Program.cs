@@ -19,7 +19,7 @@ namespace nameSort
                 Console.WriteLine("You haven't given me anything to sort!");
                 return;
             }
-            //If inputing a text file
+            //If inputing a .txt file
             else if (args != null && args.Length == 1)
             {
                 string[] fileToOpen = File.ReadAllLines(args[0]);
@@ -42,10 +42,14 @@ namespace nameSort
             ISortingNames theSorter2 = new DescendingSorter();
 
             var sortedListAsc = theSorter.Sort(unsortedList);
-            var sortedListDEsc = theSorter2.Sort(unsortedList);
+            var sortedListDesc = theSorter2.Sort(unsortedList);
+
+            //ISortingNames theSorter;
+            //var sortedList = theSorter.Sort(unsortedList);
 
             //Save file
             SaveToFile finalList = new SaveToFile();
+            //var saveFinalList = finalList.SaveSortedList();
 
             //Keep the console window open
             Console.WriteLine("Press any key to exit.");
