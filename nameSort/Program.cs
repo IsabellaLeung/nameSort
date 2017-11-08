@@ -9,32 +9,43 @@ namespace nameSort
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to The Sorter! Please either enter a .txt file on its own or a list of words separated by a comma and space e.g 'a, b, c' NOT 'a,b,c,'.  If you would like to enter names please enclose them each in double quotes before using a comma in between.");
+
+            List<string> unsortedList = new List<String>();
+            
             //Check input is not nothing
-            //if (args == null || args.Length == 0)
-            //{
-            //    Console.WriteLine("You haven't given me anything to sort!");
-            //    return;
-            //} 
+            if (args == null || args.Length == 0)
+            {
+                Console.WriteLine("You haven't given me anything to sort!");
+                return;
+            }
+            //If inputing a text file
+            else if (args != null && args.Length == 1)
+            {
+                string[] fileToOpen = File.ReadAllLines(args[0]);
+                ListOfNames takeUnsortedList = new ListOfNames();
+                unsortedList = takeUnsortedList.NamesList(fileToOpen);
+            }
+            //If writing list in to args
+            else if (args!= null && args.Length > 1)
+            {
+                List<string> wordList = new List<string>();
+                foreach (string word in args)
+                {
+                    wordList.Add(word.TrimEnd(','));
+                }
+                unsortedList = wordList;
+            }
 
-            //Input file
-            string[] fileToOpen = File.ReadAllLines("unsorted-names-list.txt");
+            //Sort list whichever way it is given
+            ISortingNames theSorter = new AscendingSorter();
+            ISortingNames theSorter2 = new DescendingSorter();
 
-            //Read file
-            ListOfNames takeUnsortedList = new ListOfNames();
-            var unsortedList = takeUnsortedList.NamesList(fileToOpen);
-            var randomvarthing = new List<String> { "a", "c", "s", "w", "a" };
-            var randomvarthing2 = "asdasd!";
-
-            //Sort file
-            SortingNames sort = new SortingNames();
-            ISortingNames sortAnyName = sort;
-            sort.SortNamesAsc(unsortedList);
-            sort.SortNamesDesc(unsortedList);
-            sort.SortNamesAsc(randomvarthing);
-            //sort.SortNamesAsc(randomvarthing2);
+            var sortedListAsc = theSorter.Sort(unsortedList);
+            var sortedListDEsc = theSorter2.Sort(unsortedList);
 
             //Save file
-            //SaveToFile.SaveSortedList(sortedList);
+            SaveToFile finalList = new SaveToFile();
 
             //Keep the console window open
             Console.WriteLine("Press any key to exit.");
@@ -48,7 +59,7 @@ namespace nameSort
         {
             List<string> nameList = new List<string>();
 
-            //Add each line of the file to the name list then sort by last name
+            //Add each line of the file to the name list
             foreach (string line in textInFile) {
                 //Make sure the name has at least 2 names (first/last) but does not exceed 4 (3first/1last max) 
                 if (line.Count(Char.IsWhiteSpace) <= 3 && line.Count(Char.IsWhiteSpace) >= 1)
@@ -66,13 +77,12 @@ namespace nameSort
     
     public interface ISortingNames
     {
-        List<string> SortNamesAsc(List<string> listToSort);
-        List<string> SortNamesDesc(List<string> listToSort);
+        List<string> Sort(List<string> listToSort);
     }
 
-    public class SortingNames : ISortingNames
+    public class AscendingSorter : ISortingNames
     {
-        public List<string> SortNamesAsc(List<string> listToSort)
+        public List<string> Sort(List<string> listToSort)
         {
             //Order the names list first by surname, then by first name if surnames are the same
             listToSort = listToSort.OrderBy(x => x.Split(' ').Last()).ThenBy(x => x).ToList();
@@ -81,8 +91,11 @@ namespace nameSort
             listToSort.ForEach(i => Console.WriteLine("{0}\n", i));
             return listToSort;
         }
+    }
 
-        public List<string> SortNamesDesc(List<string> listToSort)
+    public class DescendingSorter : ISortingNames
+    {
+        public List<string> Sort(List<string> listToSort)
         {
             //Order the names list first by surname, then by first name if surnames are the same
             listToSort = listToSort.OrderByDescending(x => x.Split(' ').Last()).ThenBy(x => x).ToList();
@@ -95,7 +108,7 @@ namespace nameSort
 
     public class SaveToFile 
     {
-        public static List<string> SaveSortedList(List<string> fileToSave)
+        public List<string> SaveSortedList(List<string> fileToSave)
         {
             //Save file in same dir as unsorted list
             string path = Directory.GetCurrentDirectory() + @"\" + "sorted-names-list.txt";
