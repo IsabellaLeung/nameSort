@@ -37,19 +37,18 @@ namespace nameSort
                 unsortedList = wordList;
             }
 
-            //Sort list whichever way it is given
+            //Sort list whichever way it is given (txt or args)
             ISortingNames theSorter = new AscendingSorter();
             ISortingNames theSorter2 = new DescendingSorter();
 
             var sortedListAsc = theSorter.Sort(unsortedList);
             var sortedListDesc = theSorter2.Sort(unsortedList);
 
-            //ISortingNames theSorter;
-            //var sortedList = theSorter.Sort(unsortedList);
+            var finalList = sortedListAsc.Concat(sortedListDesc);
 
             //Save file
-            SaveToFile finalList = new SaveToFile();
-            //var saveFinalList = finalList.SaveSortedList();
+            SaveToFile finalSave = new SaveToFile();
+            var fileToSave = finalSave.SaveSortedList(finalList.ToList());
 
             //Keep the console window open
             Console.WriteLine("Press any key to exit.");
